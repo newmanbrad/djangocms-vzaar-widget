@@ -1,0 +1,18 @@
+{% load i18n sekizai_tags cms_js_tags %}
+
+<div class="vzaarVideoContainer">
+    <iframe alt="{{ object.get_alt }}"
+            allowFullScreen allowTransparency="true"
+            class="vzaar-video-player"
+            frameborder="0"
+            height="{{ object.get_height }}"
+            id="vzvd-{{ object.get_id }}"
+            mozallowfullscreen name="vzvd-{{ object.get_id }}"
+            src="http://view.vzaar.com/{{ object.get_id }}/player?apiOn=true"
+            title="vzaar video player"
+            type="text/html"
+            webkitAllowFullScreen
+            width="{{ object.get_width }}">
+    </iframe>
+</div>
+
